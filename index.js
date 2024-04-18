@@ -40,6 +40,7 @@ app.post("/usuarios/novo", async (req, res) =>{
     res.send("Usuário inserido sob id " + usuario.id)
 });
 
+
 app.listen(8000, () => {
     console.log("server rodando na porta 8000!")
 })

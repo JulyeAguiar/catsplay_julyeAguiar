@@ -3,8 +3,15 @@ const conn = require("./db/conn");
 
 const Usuario = require("./models/Usuario");
 const Jogo = require("./models/Jogo");
+
+const handlebars = require ("express-handlebars")
 const express = require("express");
+
 const app = express();
+
+app.engine("handlebars", handlebars.engine())
+app.set("View engine", "handlebars")
+
 
 conn
 .sync()

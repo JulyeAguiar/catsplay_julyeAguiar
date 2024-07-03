@@ -1,15 +1,22 @@
+<h1> Cadastrar Jogo </h1>
+
 <form action="/jogos/novo" method="post">
     <div>
-        <label for="titulo">Titulo:</label>
-        <input type="text" id="titulo" name="titulo"/>
+        <label for="titulo">Título</label>
+        <input type="text" maxlength="30" id="titulo" name="titulo"/>
     </div>
+
     <div>
-        <label for="descricao">Descricao:</label>
+        <label for="descricao">Descrição</label>
         <input type="text" id="descricao" name="descricao"/>
     </div>
+
     <div>
-        <label for="precoBase">Preco:</label>
-        <input type="text" id="precoBase" name="precoBase"/>
+        <label for="precoBase">Preço</label>
+        <input type="number" id="precoBase" name="precoBase"/>
     </div>
-    <input type="submit" value="Cadastrar"/>
+
+    <input type="submit" value="Cadastrar" />
+
 </form>
+

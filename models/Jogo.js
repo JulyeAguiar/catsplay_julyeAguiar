@@ -7,7 +7,7 @@ const Jogo = sequelize.define("Jogo", {
         required: true,
     },
     descricao: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         required: true,
     },
     precoBase: {
